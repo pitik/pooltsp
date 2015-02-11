@@ -46,7 +46,7 @@
 
 <h2>Tambah Data Supir</h2>
 <form method="post" name="supir" action="">
-<table>
+<table border="1">
 	<tr>
 		<td>Nama Supir</td><td>:</td>
 		<td><input type="text" name="nama"></td>
@@ -58,6 +58,23 @@
 	<tr>
 		<td>No HP</td><td>:</td>
 		<td><input type="text" name="nohp"></td>
+	</tr>
+    <tr>
+    	<div class="fileupload fileupload-new" data-provides="fileupload">
+            <div class="fileupload-new thumbnail" style="width: 200px; height: 150px;">
+            	<img src="assets/img/demoUpload.jpg" alt="" />
+            </div>
+            <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;">
+            </div>
+            <div>
+                <span class="btn btn-file btn-primary">
+                	<span class="fileupload-new">Select image</span>
+                	<span class="fileupload-exists">Change</span>
+                	<input type="file" name="gambar" />
+               	</span>
+                <a href="#" class="btn btn-danger fileupload-exists" data-dismiss="fileupload">Remove</a>
+            </div>
+        </div>
 	</tr>
 	<tr>
 		<td colspan="2"><input type="submit" name="tambahspr" value="Tambah Supir">

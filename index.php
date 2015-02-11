@@ -20,15 +20,19 @@
 	<!-- END STYLE -->
 	<!-- PAGE LEVEL STYLES -->
     <link href="assets/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/bootstrap-fileupload.min.css" />
     <!-- END PAGE LEVEL  STYLES -->
 </head>
 <!-- END HEAD -->
 
 <!-- BODY -->
 <body>
-<?php 
-	include ("koneksi.php");
-?>
+<ul>
+	<li><a href="index.php?hl=datamobil"> Data Mobil </a></li>
+	<li><a href="index.php?hl=datasupir"> Data Supir </a></li>
+	<li><a href="index.php?hl=datadivisi"> Data Divisi </a></li>
+	<li><a href="index.php?hl=hargabbm"> Harga BBM </a></li>
+</ul>
 	<div id="content">
 		<?php
 	    if ($_GET['hl']==""){
@@ -57,6 +61,7 @@
 <!-- PAGE LEVEL SCRIPTS -->
     <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
     <script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="assets/plugins/jasny/js/bootstrap-fileupload.js"></script>
     <script>
         $(document).ready(function () {
             $('#dataTables-example').dataTable();
